@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "link_lists",
+  "info": {
+    "name": "Link List"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "list_items": {
+      "via": "link_list",
+      "collection": "list-item"
+    }
+  }
+}
